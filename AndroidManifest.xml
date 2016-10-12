@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.newapp"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="10"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <activity android:noHistory="false"
+                  android:name="MyActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".semester"/>
+        <activity android:name=".AddSubject"/>
+        <activity android:name=".MyCourse"/>
+        <activity android:name=".manual"/>
+        <activity android:name=".google"/>
+        <activity android:name=".googleData"/>
+        <activity android:name=".AdditionalLec"/>
+        <activity android:name=".EditSchedule"/>
+        <activity android:name=".Bunk"/>
+        <receiver android:name=".NotificationBarAlarm" />
+        <receiver android:name=".Autostart" >
+            <intent-filter>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <!-- Permission: Allow Connect to Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Permission: Writing to SDCard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

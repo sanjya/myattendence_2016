@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:longClickable="true" android:nestedScrollingEnabled="false">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textViewItem"
+            android:layout_marginTop="48dp"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:textColor="#ff8dff0e"
+            android:textSize="25dp" android:singleLine="false"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_below="@+id/textViewItem" android:layout_alignParentLeft="true"
+                android:id="@+id/RadioGroup">
+
+
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attended       "
+                android:id="@+id/radioButton" android:checked="false"
+                android:buttonTint="@android:color/holo_green_light" android:buttonTintMode="src_over"
+                android:backgroundTintMode="src_over" android:singleLine="false"
+                android:button="@drawable/custom_radio_button"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Canceled    "
+                android:id="@+id/radioButton2" android:checked="false"
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:backgroundTintMode="src_over" android:button="@drawable/custom_radio_button"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Missed"
+                android:id="@+id/radioButton3" android:checked="false"
+                android:buttonTint="@android:color/holo_red_dark" android:buttonTintMode="src_over"
+                android:backgroundTintMode="src_over" android:button="@drawable/custom_radio_button"/>
+    </RadioGroup>
+</RelativeLayout>

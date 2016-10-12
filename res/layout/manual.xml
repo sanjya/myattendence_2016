@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="#ff33b5e5">
+
+
+    <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_below="@+id/textView10" android:layout_alignParentLeft="true" android:id="@+id/radioGroup">
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:id="@+id/radioButton4" android:checked="false"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T"
+                android:id="@+id/radioButton5" android:checked="false"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="W"
+                android:id="@+id/radioButton6" android:checked="false"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T"
+                android:id="@+id/radioButton7" android:checked="false"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F"
+                android:id="@+id/radioButton8" android:checked="false"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S"
+                android:id="@+id/radioButton9" android:checked="false"/>
+    </RadioGroup>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/textView10"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:layout_marginRight="46dp" android:layout_below="@+id/radioGroup"
+            android:layout_alignParentRight="true" android:layout_marginTop="39dp" android:onClick="setLecture"
+            android:src="@drawable/add" android:background="#ff7aff1a"/>
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView3"
+            android:layout_above="@+id/button4" android:layout_below="@+id/timePicker"
+            android:layout_alignParentRight="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:id="@+id/button4" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:onClick="submit"/>
+    <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timePicker" android:layout_below="@+id/radioGroup" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ff33b5e5">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Start Date"
+            android:id="@+id/textView" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:clickable="false" android:layout_marginLeft="10dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Weeks"
+            android:id="@+id/textView2" android:layout_below="@+id/datePicker" android:layout_alignParentLeft="true"
+            android:layout_marginTop="35dp" android:layout_marginLeft="10dp"/>
+    <Button
+            android:layout_width="@android:dimen/thumbnail_width"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:text="SUBMIT"
+            android:id="@+id/button"
+            android:onClick="Submit" android:layout_above="@+id/button2" android:layout_alignParentLeft="true"
+            android:layout_marginBottom="35dp" android:backgroundTint="@android:color/holo_green_light"
+            android:textColor="#ffffff" android:textSize="20dp" android:textStyle="bold"
+            android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+            android:background="#ff08ff81" android:layout_alignParentRight="true"/>
+    <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePicker"
+            android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:ems="10"
+            android:id="@+id/editWeek" android:layout_alignTop="@+id/textView2"
+            android:layout_alignLeft="@+id/datePicker" android:numeric="integer" android:layout_marginRight="10dp"/>
+    <Button
+            android:layout_width="@android:dimen/thumbnail_width"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:text="UNSET"
+            android:id="@+id/button2"
+            android:onClick="Unset" android:layout_above="@+id/button8" android:layout_alignParentLeft="true"
+            android:layout_marginBottom="48dp" android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="#ffffff" android:textSize="20dp" android:textStyle="bold"
+            android:background="#ffff1318" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"/>
+    <Button
+            android:layout_width="@android:dimen/thumbnail_width"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:text="Add Subject"
+            android:id="@+id/button8"
+            android:layout_marginBottom="51dp" android:onClick="addSub"
+            android:minHeight="30dp" android:textColor="#ffffff" android:fontFamily="@android:string/ok"
+            android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+            android:textSize="20sp" android:textStyle="bold"
+            android:background="#ffffbb33" android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" android:layout_alignParentRight="true"/>
+</RelativeLayout>
